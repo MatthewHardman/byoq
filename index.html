@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holly's BYOQ Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="shapesAndColor">
+      <canvas id="storage" width="450" height="100"> </canvas>
+      <div id="colorContainer">
+        <button id="redButton"></button>
+        <button id="blueButton" onclick="handleBlue()"></button>
+        <button id="yellowButton" onclick="handleYellow()"></button>
+      </div>
+    </div>
+    <button id="addToQuilt" onclick="handleAddToQuilt()">Add to Quilt</button>
+    <button id="removeFromQuilt" onclick="handleRemoveFromQuilt()">
+      Remove from Quilt
+    </button>
+    <canvas id="quilt" width="500" height="500"></canvas>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

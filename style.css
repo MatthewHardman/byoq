@@ -1,0 +1,33 @@
+#shapesAndColor {
+  display: flex;
+}
+
+#colorContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#redButton {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+}
+#blueButton {
+  height: 20px;
+  width: 20px;
+  background-color: blue;
+}
+
+#yellowButton {
+  height: 20px;
+  width: 20px;
+  background-color: yellow;
+}
+
+#quilt {
+  background-color: lightgrey;
+}
+
+button {
+  margin: 5px;
+}
