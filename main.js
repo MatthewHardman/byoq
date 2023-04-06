@@ -38,39 +38,36 @@ var semiCircle = new fabric.Circle({
 
 storageCanvas.add(rect, triangle, semiCircle);
 
-function handleAddToQuilt() {
+const addToQuilt = document.getElementById("addToQuilt");
+addToQuilt.addEventListener("click", function () {
   storageCanvas.getActiveObject().clone(function (cloned) {
     quiltCanvas.add(cloned);
   });
-}
+});
 
-function handleRemoveFromQuilt() {
-  object = quiltCanvas.getActiveObject();
+const removeFromQuilt = document.getElementById("removeFromQuilt");
+removeFromQuilt.addEventListener("click", function () {
+  let object = quiltCanvas.getActiveObject();
   quiltCanvas.remove(object);
-}
+});
 
 const redButton = document.getElementById("redButton");
 redButton.addEventListener("click", function () {
-  console.log(storageCanvas.getActiveObject());
-  object = storageCanvas.getActiveObject();
+  let object = storageCanvas.getActiveObject();
   object.set("fill", "red");
   storageCanvas.add(object);
 });
 
-function handleRed() {
-  object = storageCanvas.getActiveObject();
-  object.set("fill", "red");
-  storageCanvas.add(object);
-}
-
-function handleBlue() {
-  object = storageCanvas.getActiveObject();
+const blueButton = document.getElementById("blueButton");
+blueButton.addEventListener("click", function () {
+  let object = storageCanvas.getActiveObject();
   object.set("fill", "blue");
   storageCanvas.add(object);
-}
+});
 
-function handleYellow() {
-  object = storageCanvas.getActiveObject();
+const yellowButton = document.getElementById("yellowButton");
+yellowButton.addEventListener("click", function () {
+  let object = storageCanvas.getActiveObject();
   object.set("fill", "yellow");
   storageCanvas.add(object);
-}
+});
